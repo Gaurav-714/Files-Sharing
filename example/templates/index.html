@@ -146,7 +146,7 @@
             }).then(res => res.json())
                 .then(result => {
                     console.log(result)
-                    url = `http://127.0.0.1:8000/download/${result.data.folder}`
+                    url = `https://files-sharing-pi.vercel.app/download/${result.data.folder}`
                     document.getElementById('btn').style.display = 'df -h'
                 })
 
