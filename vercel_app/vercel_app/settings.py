@@ -89,7 +89,7 @@ DATABASES = {
         'NAME': 'my_db',
         'USER': 'harry',
         'PASSWORD': 'DjDev714',
-        'HOST': 'localhost',
+        'HOST': 'https://share-files-beta.vercel.app',
         'PORT': '3306',
     }
 }
