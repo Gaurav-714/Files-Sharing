@@ -149,3 +149,8 @@ STATICFILES_DIR = {
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'public/static')
 MEDIA_URL = '/media/'
+
+
+from django.conf import settings
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'vercel_app.settings')
+settings.configure()
