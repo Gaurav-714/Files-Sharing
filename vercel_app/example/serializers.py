@@ -36,4 +36,4 @@ class FileListSerializer(serializers.Serializer):
             return {'files' : {}, 'folder' : str(folder.uid)}
         
         except Exception as ex:
-            raise serializers.ValidationError(f"Error occurred while creating files: {str(ex)}")
+            raise serializers.ValidationError(f"Error occurred while creating files : {str(ex)}")

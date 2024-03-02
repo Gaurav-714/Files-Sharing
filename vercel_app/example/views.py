@@ -8,6 +8,14 @@ def home(request):
     return render(request, 'index.html')
 
 
+def signup(request):
+    return render(request, 'signup.html')
+
+
+def signin(request):
+    return render(request, 'signin.html')
+
+
 def download(request, uid):
     return render(request, 'download.html', context = { 'uid' : uid })
 
