@@ -89,13 +89,8 @@ DATABASES = {
         'NAME': 'files_db',
         'USER': 'gaurav',
         'PASSWORD': 'DjDev714',
-<<<<<<< HEAD
-        #'HOST': 'https://share-files-beta.vercel.app',
-        'HOST': '127.0.0.1',
-=======
-        'HOST': 'https://files-sharing-theta.vercel.app/',
+        'HOST': 'https://files-sharing-theta.vercel.app',
         #'HOST': '127.0.0.1',
->>>>>>> a767141710c149983ce0bd3c3d4c8c1f9bf51eed
         'PORT': '3306',
     }
 }
@@ -153,10 +148,5 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR , "public/static")
 ]
 
-<<<<<<< HEAD
 MEDIA_ROOT = os.path.join(BASE_DIR, 'public/static') 
 MEDIA_URL = '/media/'
-=======
-MEDIA_ROOT =  os.path.join(BASE_DIR, 'public/static') 
-MEDIA_URL = '/media/'
->>>>>>> a767141710c149983ce0bd3c3d4c8c1f9bf51eed
