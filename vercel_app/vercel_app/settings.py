@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=cldztbc4jg&xl0!x673!*v2_=p$$eu)=7*f#d0#zs$44xx-h^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
@@ -89,8 +89,8 @@ DATABASES = {
         'NAME': 'files_db',
         'USER': 'gaurav',
         'PASSWORD': 'DjDev714',
-        'HOST': 'https://share-files-beta.vercel.app',
-        #'HOST': '127.0.0.1',
+        #'HOST': 'https://share-files-beta.vercel.app',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
@@ -137,30 +137,16 @@ USE_TZ = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-
 import os
 
-'''
+
 STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'public/static')
-]
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'public/static')
-MEDIA_URL = '/media/'
-'''
-
-
-STATIC_ROOT = 'staticfiles'
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-
-STATICFILES_DIRS = [
     os.path.join(BASE_DIR , "public/static")
 ]
 
-MEDIA_ROOT =  os.path.join(BASE_DIR, 'public/static') 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'public/static') 
 MEDIA_URL = '/media/'
