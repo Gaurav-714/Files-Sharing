@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=cldztbc4jg&xl0!x673!*v2_=p$$eu)=7*f#d0#zs$44xx-h^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
@@ -86,10 +86,11 @@ WSGI_APPLICATION = 'vercel_app.wsgi.app'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'my_db',
-        'USER': 'harry',
+        'NAME': 'files_db',
+        'USER': 'gaurav',
         'PASSWORD': 'DjDev714',
-        'HOST': 'https://share-files-beta.vercel.app',
+        #'HOST': 'https://share-files-beta.vercel.app',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
@@ -128,7 +129,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -143,9 +144,10 @@ STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATICFILES_DIR = {
-    os.path.join(BASE_DIR, 'public/static')
-}
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'public/static'),
+]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'public/static')
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'public/media')
 MEDIA_URL = '/media/'

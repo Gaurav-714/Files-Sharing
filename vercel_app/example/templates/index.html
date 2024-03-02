@@ -99,7 +99,7 @@
         <img src="/media/image/display.png" class="img-fluid img-responsive" style="height: 200px;">
     </div>
 
-    <input type="file" class="my-pond mt-4 shadow" multiple name="filepond" />
+    <input type="file" class="my-pond mt-4 shadow" multiple name="filepond"/>
 
     <div class="text-center">
         <button class="btn btn-success shadow" onclick="upload_file()"><b>Upload File</b></button>
@@ -146,7 +146,8 @@
             }).then(res => res.json())
                 .then(result => {
                     console.log(result)
-                    url = `https://share-files-beta.vercel.app/download/${result.data.folder}`
+                    //url = `https://share-files-beta.vercel.app/download/${result.data.folder}`
+                    url = `http://127.0.0.1:8000/download/${result.data.folder}`
                     document.getElementById('btn').style.display = 'df -h'
                 })
 
