@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'example',
+    'home',
     'rest_framework',
 ]
 
@@ -89,12 +89,7 @@ DATABASES = {
         'NAME': 'files_db',
         'USER': 'gaurav',
         'PASSWORD': 'DjDev714',
-<<<<<<< HEAD:core/core/settings.py
         'HOST': '127.0.0.1',
-=======
-        #'HOST': 'https://files-sharing-theta.vercel.app',
-        'HOST': 'localhost', # '127.0.0.1',
->>>>>>> a2458554544e868358ddd47e73ff7d98407c09ef:vercel_app/vercel_app/settings.py
         'PORT': '3306',
     }
 }
