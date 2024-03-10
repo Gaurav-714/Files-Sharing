@@ -2,11 +2,13 @@
 *.log
 *.pyc
 __pycache__
-db.sqlite3
+*db.sqlite3
 media
+bin/
+lib/
 
 # Environments 
-.env 
+*.env 
 .venv 
 env/ 
 venv/ 
