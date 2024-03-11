@@ -112,9 +112,9 @@ DATABASES = {
 import dj_database_url
 from decouple import config
 
-env_file = BASE_DIR / '.env'
+'''env_file = BASE_DIR / '.env'
 if env_file.exists():
-    config.read_dotenv(env_file)
+    config.read_dotenv(env_file)'''
 
 # Database configuration using dj_database_url
 DATABASES = {
