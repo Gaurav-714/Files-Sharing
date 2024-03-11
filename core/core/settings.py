@@ -103,7 +103,7 @@ DATABASES = {
         "NAME": "files_db",
         "USER": "harry",
         "PASSWORD": "djDev714",
-        "HOST": "postgres://default:ch9G7pYlZJxL@ep-floral-salad-a14qgq67.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require",  # "127.0.0.1",
+        "HOST": "https://vercel.com/gaurav-nagoses-projects/~/stores/postgres/store_p4lkgHaJwzIrJiXW/data",  # "127.0.0.1",
         "PORT": "5432",
     }
 }
