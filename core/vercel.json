@@ -11,9 +11,9 @@
       },
       {
           "src": "build.sh",
-          "use": "@vercel/public",
+          "use": "@vercel/static-build",
           "config": {
-              "distDir": "public"
+              "distDir": "staticfiles_build"
           }
       }
   ],
