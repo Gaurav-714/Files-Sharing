@@ -96,22 +96,31 @@ DATABASES = {
     }
 }
 '''
-
+"""
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "files_db",
         "USER": "harry",
         "PASSWORD": "djDev714",
-        "HOST": "https://vercel.com/gaurav-nagoses-projects/~/stores/postgres/store_p4lkgHaJwzIrJiXW/data",  # "127.0.0.1",
+        "HOST": "127.0.0.1",
         "PORT": "5432",
     }
 }
+"""
 
-'''import dj_database_url
+import dj_database_url
 from decouple import config
-DATABASES['default'] = dj_database_url.config()
-'''
+
+env_file = BASE_DIR / '.env'
+if env_file.exists():
+    config.read_dotenv(env_file)
+
+# Database configuration using dj_database_url
+DATABASES = {
+    'default': dj_database_url.config(default=config('DATABASE_URL'))
+}
+
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
