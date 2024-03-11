@@ -118,7 +118,7 @@ if env_file.exists():
 
 # Database configuration using dj_database_url
 DATABASES = {
-    'default': dj_database_url.config(default=config('DATABASE_URL'))
+    'default': dj_database_url.config()
 }
 
 # Password validation
